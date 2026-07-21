@@ -312,12 +312,21 @@ body{
     line-height:30px;          
 }
 .video{
-    margin:0 auto;    
-    margin-top: 155px;
-    width: 1440px;
-    height: 700px;
-    background-color: blue;
+    width:1440px;
+    height:700px;
+    margin:155px auto 0;
+    overflow:hidden;
+    position:relative;
 }
+
+.video video{
+    width:108%;
+    height:100%;
+    object-fit:cover;
+
+    transform:translateX(-80px);
+}
+
 
 .brand_story{
     width:1440px;

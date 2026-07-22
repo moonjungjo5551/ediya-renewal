@@ -8,110 +8,102 @@ body{
     margin:0;
     padding:0;
 }
-/* index */
-#wrap {
+
+
+/* ==================================================
+   Layout
+================================================== */
+
+#wrap{
     min-height:100vh;
     display:flex;
     flex-direction:column;
 }
-/* header */
-#header {
-    width: 100%;
-    height: 140px;
-    background-color: #fff;
+
+
+/* ==================================================
+   Header
+================================================== */
+
+#header{
+    width:100%;
+    height:140px;
+    background:#fff;
 }
-#header .top_bar{
-    width: 100%;
+
+.top_bar{
+    width:100%;
     height:40px;
     background:#243c84;
-    display: flex;
-    justify-content: space-between;  
-    align-items: center;
-    padding: 0 240px;  
-
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 240px;
 }
 
-.top_l{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    color: #fff;
-    list-style: none;
-    font-size: 13px;
-    gap: 15px;
-}
-.top_l li{
-    font-size: 13px;
-    color: #fff;
-    cursor: pointer;
-    display: flex;
-    align-items: center;}
+.top_l,
 .top_r{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    color: #fff;
-    list-style: none;
-    font-size: 13px;
-    gap: 15px;
+    display:flex;
+    gap:15px;
+    list-style:none;
 }
+
+.top_l li,
 .top_r li{
-    font-size: 13px;
-    color: #fff;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+    display:flex;
+    align-items:center;
+    color:#fff;
+    font-size:13px;
+    cursor:pointer;
 }
-.top_l li:not(:last-child)::after, 
-.top_r li:not(:last-child)::after {
-    content: "|";
-    margin-left: 15px; 
-    color: #fff;
-    cursor: default;   
+
+.top_l li:not(:last-child)::after,
+.top_r li:not(:last-child)::after{
+    content:"|";
+    margin-left:15px;
 }
+
+
+/* ==================================================
+   Main Header
+================================================== */
 
 .main_header{
-    width: 100%;
+    width:100%;
     height:100px;
+    display:flex;
+    align-items:center;
+    padding:0 240px;
     background:#fff;
-    display: flex;
-    align-items: center;
-    padding: 0 240px;
-
 }
+
 .logo{
-    width: 160px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-
-}
-.logo a{    
-    display: block;
-    width: 100%;
+    width:160px;
 }
 
-.logo img {
-    display: block;
-    width: 100%;
-    height: auto; 
+.logo img{
+    width:100%;
+    display:block;
 }
+
 .nav{
-    margin:0 0 0 auto;
-    padding:0;
-    display: flex;
-    list-style: none;
-    font-size: 17px;
-    gap: 60px;  
-    font-weight: 700;
-  
+    margin-left:auto;
+    display:flex;
+    gap:60px;
+    list-style:none;
+}
 
+.nav a{
+    text-decoration:none;
+    color:#222;
+    font-size:17px;
+    font-weight:700;
 }
-.nav li a{
-    text-decoration: none;
-    color: #222222;
-    cursor:pointer;  
-}
+
+
+/* ==================================================
+   Sub Visual
+================================================== */
 
 .sub{
     width:100%;
@@ -133,13 +125,19 @@ body{
     background:rgba(0,0,0,.2);
 }
 
-.sub_main p{
+.sub_main p,
+.sub_main h2,
+.sub_main>span,
+.sub_tab{
     position:relative;
     z-index:1;
+}
+
+.sub_main p{
     margin-left:240px;
     padding-top:50px;
-    font-size:14px;
     color:#fff;
+    font-size:14px;
 }
 
 .sub_main p a{
@@ -147,24 +145,14 @@ body{
     text-decoration:none;
 }
 
-.sub_main p strong{
-    color:#fff;
-    font-weight:700;
-}
-
 .sub_main h2{
-    position:relative;
-    z-index:1;
     margin-top:80px;
     text-align:center;
     font-size:60px;
-    font-weight:700;
     color:#fff;
 }
 
 .sub_main>span{
-    position:relative;
-    z-index:1;
     display:block;
     margin-top:20px;
     text-align:center;
@@ -174,7 +162,6 @@ body{
 
 .sub_tab{
     position:relative;
-    z-index:1;
     display:flex;
     justify-content:center;
     margin-top:60px;
@@ -189,7 +176,14 @@ body{
     text-decoration:none;
     color:#fff;
     border:1px solid rgba(255,255,255,.6);
+    transition:.3s;
 }
+
+.sub_tab a.on{
+    background:#143A8C;
+}
+
+
 .bean_intro{
     width:1440px;
     margin:120px auto;

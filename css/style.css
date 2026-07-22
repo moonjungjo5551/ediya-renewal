@@ -827,3 +827,16 @@ margin-top:30px;
     color:rgba(255,255,255,.55);
     letter-spacing:0.3px;
 }
+
+.nav li,
+.main_btn,
+.card_wrap > div,
+.story_btn,
+.banner_btn,
+.notice_btn,
+.store_card,
+.partner_card,
+.value > div,
+.sns_btn > div{
+    cursor:pointer;
+}

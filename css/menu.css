@@ -128,7 +128,7 @@ min-height:100vh;
 .menu_visual{
     width:100%;
     height:700px;
-    background:url("../images/menu/menu_visual.jpg") no-repeat center;
+    background:url("../images/menu/menu.png") no-repeat center;
     background-size:cover;
     position:relative;
 }
@@ -220,8 +220,7 @@ min-height:100vh;
 
 .menu_img img{
     width:100%;
-    height:520px;
-    object-fit:cover;
+    height:auto;
     border-radius:24px;
     display:block;
 }
